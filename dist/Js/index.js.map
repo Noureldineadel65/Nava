@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["$","slick","autoplay","autoplaySpeed"],"mappings":"AAAAA,EAAE,aAAaC,MAAM,CACpBC,UAAU,EACVC,cAAe","file":"index.js","sourcesContent":["$(\".features\").slick({\r\n\tautoplay: true,\r\n\tautoplaySpeed: 2000,\r\n});\r\n"]}
