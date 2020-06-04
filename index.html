@@ -10,15 +10,53 @@
     <link rel="stylesheet" href="./dist/CSS/main.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" defer></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/noframework.waypoints.min.js"></script>
     <script src="./dist/Js/index.js" defer></script>
 </head>
 
 <body>
-    <nav>
+    <div class="mobile-nav">
+        <div class="container">
+            <header>
+                <a href="#"><img src="./dist/images/logo.png" alt="logo"></a>
+                <i class="fas fa-times close"></i>
+            </header>
+            <ul>
+                <li>
+                    <a href="#">TOP DESTINATIONS</a>
+                </li>
+                <li>
+                    <a href="#">FEATURED BOATS</a>
+                </li>
+                <li>
+                    <a href="#">ADD YOUR BOAT</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT US</a>
+                </li>
+                <li class="interactions">
+                    <button class="outline">Sign up</button>
+                    <button class="outline">Login</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="main-nav">
         <div class="container">
             <div class="flex between center">
                 <a href="#"><img src="./dist/images/logo.png" alt="logo"></a>
-                <a href="#"><i class="fas fa-bars"></i></a>
+                <a href="#" class="ham"><i class="fas fa-bars"></i></a>
+                <ul class="nav-desk">
+                    <li>
+                        <a href="#">TOP DESTINATIONS</a>
+                    </li>
+                    <li>
+                        <a href="#">ADD YOUR BOAT</a>
+                    </li>
+                    <li>
+                        <button class="outline">Sign up</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -122,13 +160,15 @@
         <button class="btn">EXPLORE MORE DESTINATIONS</button>
     </section>
     <section id="haveboat">
-        <h1>Have your own boat?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>MAKE MONEY WITH YOUR BOAT</button>
+        <div class="container">
+            <h1>Have your own boat?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>MAKE MONEY WITH YOUR BOAT</button>
+        </div>
     </section>
     <section id="featured-boats">
         <div class="container">
-            <h2>Explore our top destinations</h2>
+            <h2>FEATURED BOATS</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             <div class="images-showcase">
                 <div class="image">
@@ -138,7 +178,16 @@
                     </div>
                     <div class="content">
                         <p class="city">Delphia 47</p>
-                        <p class="country">Portugal</p>
+                        <div class="about">
+                            <div class="location">
+                                <img src="./dist/images/map.png">
+                                <p>Gdańsk, Poland </p>
+                            </div>
+                            <div class="people">
+                                <img src="./dist/images/people.png">
+                                <p>8 People</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -149,7 +198,18 @@
                     </div>
                     <div class="content">
                         <p class="city">Sense 55</p>
-                        <p class="country">Spain</p>
+
+                        <div class="about">
+                            <div class="location">
+                                <img src="./dist/images/map.png">
+                                <p>Portofino, Italy</p>
+                            </div>
+                            <div class="people">
+                                <img src="./dist/images/people.png">
+                                <p>12 People</p>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -160,7 +220,18 @@
                     </div>
                     <div class="content">
                         <p class="city">Crusier 51</p>
-                        <p class="country">Spain</p>
+
+                        <div class="about">
+                            <div class="location">
+                                <img src="./dist/images/map.png">
+                                <p>Palma de Mallorca, Spain</p>
+                            </div>
+                            <div class="people">
+                                <img src="./dist/images/people.png">
+                                <p>10 People</p>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -171,7 +242,18 @@
                     </div>
                     <div class="content">
                         <p class="city">Crusier 41S</p>
-                        <p class="country">Italy</p>
+
+                        <div class="about">
+                            <div class="location">
+                                <img src="./dist/images/map.png">
+                                <p>Lisbon, Portugal</p>
+                            </div>
+                            <div class="people">
+                                <img src="./dist/images/people.png">
+                                <p>8 People</p>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -180,6 +262,45 @@
         </div>
         <button class="btn">LOAD MORE BOATS</button>
     </section>
+    <footer>
+        <ul class="footer-items">
+            <li>
+                <div class="footer-head">TOP LOCATIONS</div>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+            </li>
+            <li>
+                <div class="footer-head">FEATURED BOATS</div>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+            </li>
+            <li>
+                <div class="footer-head">CONTACT US</div>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+            </li>
+            <li>
+
+                <div class="icons">
+                    <img src="./dist/images/facebook.png" alt="">
+                    <img src="./dist/images/twitter.png" alt="">
+                    <img src="./dist/images/googleplus.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>

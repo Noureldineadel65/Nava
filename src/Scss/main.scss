@@ -67,7 +67,8 @@ button::-moz-focus-inner {
 }
 nav {
 	font-size: 2.8rem;
-	padding: 2rem 0;
+	padding: 3rem 0;
+	transition: all 0.4s;
 	width: 100%;
 	position: absolute;
 	i {
@@ -84,7 +85,7 @@ nav {
 	background-size: cover;
 	padding-top: 0rem;
 	// padding-bottom: 14rem;
-	height: 100vh;
+	height: 115vh;
 	position: relative;
 	z-index: 1;
 	display: flex;
@@ -118,8 +119,8 @@ h1 {
 	text-transform: uppercase;
 	line-height: 45px;
 	text-align: center;
-	letter-spacing: 8px;
-	width: 80%;
+	letter-spacing: 5px;
+	width: 100%;
 	margin: 0 auto;
 }
 .input {
@@ -142,6 +143,17 @@ button {
 	padding: 1.5rem 2rem;
 	img {
 		margin-right: 1rem;
+	}
+	transition: all 0.3s;
+	&:active {
+		transform: scale(0.95);
+	}
+	&.outline {
+		background: transparent;
+		color: #fff;
+		border: 2px solid #fff;
+		padding: 0.8rem 3rem;
+		border-radius: 10px;
 	}
 }
 section {
@@ -194,6 +206,7 @@ section {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/explore1.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 			&:nth-of-type(2) {
@@ -206,6 +219,7 @@ section {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/explore2.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 			&:nth-of-type(3) {
@@ -218,6 +232,7 @@ section {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/explore3.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 			&:nth-of-type(4) {
@@ -230,6 +245,7 @@ section {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/explore4.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 			&:nth-of-type(5) {
@@ -242,6 +258,7 @@ section {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/explore5.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 		}
@@ -320,7 +337,7 @@ aside {
 		color: #fff;
 		text-align: center;
 		margin: 2rem auto;
-		width: 60%;
+		width: 100%;
 	}
 	button {
 		font-size: 1.4rem;
@@ -388,6 +405,7 @@ h2 {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/boat1.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 			&:nth-of-type(2) {
@@ -400,6 +418,7 @@ h2 {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/boat2.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 			&:nth-of-type(3) {
@@ -412,6 +431,7 @@ h2 {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/boat3.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 			&:nth-of-type(4) {
@@ -424,6 +444,7 @@ h2 {
 						rgba(0, 0, 0, 0.8) 100%
 					),
 					url(../images/boat4.png) no-repeat;
+				background-size: cover;
 				background-position: center;
 			}
 		}
@@ -448,4 +469,106 @@ h2 {
 			}
 		}
 	}
+	.about {
+		display: flex;
+		align-items: center;
+		div {
+			display: flex;
+			align-items: center;
+			&:last-of-type {
+				margin-left: 1rem;
+			}
+			img {
+				margin-right: 1rem;
+			}
+			p {
+				margin: 1rem 0 !important;
+				font-size: 1.2rem !important;
+				color: #fff !important;
+			}
+		}
+	}
 }
+footer {
+	color: #fff;
+	font-size: 1.4rem;
+	padding: 4rem 0;
+	background-color: rgb(65, 64, 64);
+	.footer-items {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		& > li {
+			&:not(:last-of-type) {
+				margin-bottom: 4rem;
+			}
+		}
+	}
+	.footer-head {
+		font-weight: bolder;
+	}
+}
+.nav-desk {
+	display: none;
+}
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.966);
+	z-index: 10;
+	padding: 3rem 0;
+	transition: transform 0.6s;
+	color: #fff;
+	transform: translateY(-200rem);
+	&.opened {
+		transform: translateY(0rem);
+	}
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid gray;
+		padding-bottom: 2rem;
+	}
+	.close {
+		color: #fff;
+		font-size: 3rem;
+	}
+	ul {
+		margin-top: 2rem;
+		font-size: 2.2rem;
+		text-align: center;
+		li {
+			margin: 3rem 0;
+		}
+	}
+	// button {
+	// 	margin: 0 auto;
+	// }
+	.interactions {
+		display: flex;
+		justify-content: center;
+		button:first-of-type {
+			margin-right: 2rem;
+		}
+	}
+}
+.fixed {
+	background-color: #fff;
+	padding: 1.5rem 0;
+	.nav-desk,
+	i {
+		color: #222 !important;
+	}
+	position: fixed;
+	z-index: 9;
+	.outline {
+		color: #222;
+		border: 2px solid #222;
+	}
+}
+@import "media";
